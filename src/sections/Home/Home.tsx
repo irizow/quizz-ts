@@ -1,6 +1,5 @@
-import { useState } from "react";
+
 import styles from './home.module.css';
-import { Link } from "react-router-dom";
 import javaScriptLogo from '../../assets/images/javascript-logo.svg'
 import typeScriptLogo from '../../assets/images/typescript-logo.svg'
 import reactLogo from '../../assets/images/react-logo.svg'
