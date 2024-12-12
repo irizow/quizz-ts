@@ -1,0 +1,70 @@
+.playerpanel {
+    width: 100%;
+    background-color: var(--light-blue);
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    place-self:start;
+    padding: 0 1rem;
+    color: var(--white);
+}
+
+.playerpanel>div {
+    display: flex;
+    gap: 2rem;
+}
+
+.playerpanel img{
+    width: 2rem;
+    filter: invert(98%);
+}
+
+.timerdiv {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.timerdiv>img {
+    width: 1.5rem;
+    filter: invert(98%);
+}
+
+/*Winner modal*/
+
+.winnermodal {
+    min-width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    padding: 1rem;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(128, 128, 128, 0.311);
+    backdrop-filter: blur(10px);
+    display: grid;
+    place-items: center;
+}
+
+.winnermodal>div {
+    border-radius: 10px;
+    background-color: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.winnermodal>div a {
+    padding: 0.5rem 1rem;
+    background-color: var(--light-blue);
+    color: var(--white);
+    margin-top: 1rem;
+    text-decoration: none;
+    
+}
+
+.winnermodal img {
+    width: 2rem;
+}

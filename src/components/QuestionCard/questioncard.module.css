@@ -1,0 +1,59 @@
+.questioncard {
+    background-color: rgb(236, 238, 239);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(223, 223, 223);
+    display: flex;
+    flex-direction: column;
+    width: min(95vw, 800px);
+    transition: max-height 0.3s ease;
+    margin: 1rem;
+    
+}
+
+.questioncard>form {
+    display: flex;
+    flex-direction: column;
+}
+
+.questioncard form>div {
+    border-radius: 5px;
+}
+
+.correct {
+    background-color: rgb(191, 233, 191);
+    border: 2px solid rgb(56, 127, 56);
+}
+
+.incorrect {
+    background-color: rgb(255, 173, 173);
+    border: 2px solid rgb(255, 44, 44);
+    color: red;
+}
+
+.questioncard button {
+    width: 5rem;
+    background-color: rgb(171, 241, 182);
+    box-shadow: 1px 2px 2px grey;
+    border: 1px solid transparent;
+    padding: 0.4rem;
+    border-radius: 5px;
+    align-self: center;
+    margin-top: 1rem;
+    transition: box-shadow 200ms ease;
+}
+
+.questioncard button:hover {
+    box-shadow: none;
+    transition: box-shadow 200ms ease;
+}
+
+.questioncard button:disabled {
+    display: none;
+}
+
+.explanation {
+    margin-top: 1rem;
+    background-color: var(--white);
+    text-align: center;
+}

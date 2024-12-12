@@ -1,0 +1,713 @@
+[
+        {
+            "id": 1,
+          "question": "What is the purpose of the `let` keyword in JavaScript?",
+          "answers": [
+            "It declares a block-scoped variable.",
+            "It declares a constant variable.",
+            "It is used for declaring global variables.",
+            "It is an alternative to `const` that cannot be reassigned."
+          ],
+          "correctAnswerIndex": 0,
+          "explanation": "The `let` keyword declares a variable with block scope, meaning it is only accessible within the block where it is declared.",
+          "category": "javascript"
+        },
+        {
+            "id": 2,
+          "question": "What is the result of `typeof null` in JavaScript?",
+          "answers": [
+            "'null'",
+            "'object'",
+            "'undefined'",
+            "'boolean'"
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "In JavaScript, `typeof null` incorrectly returns 'object' due to a historical bug in the language.",
+          "category": "javascript"
+        },
+        {      "id": 3,
+            "question": "What is the output of `console.log(0.1 + 0.2 === 0.3)`?",
+            "answers": [
+              "true",
+              "false",
+              "undefined",
+              "Error"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The output is `false` because of floating-point precision errors in JavaScript. `0.1 + 0.2` results in `0.30000000000000004`.",
+            "category": "javascript"
+          },
+          {
+            "id": 4,
+            "question": "Which method can be used to copy an array in JavaScript?",
+            "answers": [
+              "Array.prototype.copy()",
+              "Array.from()",
+              "Array.prototype.duplicate()",
+              "Array.createCopy()"
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The `Array.from()` method creates a shallow copy of an array.",
+            "category": "javascript"
+          },
+          {
+            "id": 5,
+            "question": "What is the difference between `==` and `===` in JavaScript?",
+            "answers": [
+              "`==` checks value equality; `===` checks value and type equality.",
+              "`==` checks type equality; `===` checks value equality.",
+              "`==` is faster than `===`.",
+              "`===` is deprecated."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "`==` performs type coercion, whereas `===` checks both value and type equality without coercion.",
+            "category": "javascript"
+          },
+          {
+            "id": 6,
+            "question": "What is a closure in JavaScript?",
+            "answers": [
+              "A block of code that runs only once.",
+              "A function having access to its outer function's scope, even after the outer function has returned.",
+              "An object that groups related methods together.",
+              "A type of error in asynchronous code."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "A closure is created when a function retains access to variables from its lexical scope even after the outer function has executed.",
+            "category": "javascript"
+          },
+        {
+            "id": 7,
+          "question": "What is a React hook?",
+          "answers": [
+            "A function that lets you use state and other React features.",
+            "A method for optimizing rendering.",
+            "A way to create higher-order components.",
+            "A type of event listener in React."
+          ],
+          "correctAnswerIndex": 0,
+          "explanation": "React hooks, introduced in React 16.8, allow functional components to use state and other React features like lifecycle methods.",
+          "category": "react"
+        },
+        {
+            "id": 8,
+          "question": "Which React hook would you use for fetching data?",
+          "answers": [
+            "`useEffect`",
+            "`useFetch`",
+            "`useData`",
+            "`useState`"
+          ],
+          "correctAnswerIndex": 0,
+          "explanation": "`useEffect` is commonly used for side effects like fetching data, interacting with APIs, or subscribing to streams.",
+          "category": "react"
+        },
+        {
+            "id": 9,
+            "question": "What is the virtual DOM in React?",
+            "answers": [
+              "A copy of the real DOM that allows fast updates.",
+              "A library for manipulating the real DOM.",
+              "A function that generates HTML for the browser.",
+              "A debugging tool in React."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "The virtual DOM is an in-memory representation of the real DOM. React uses it to determine the most efficient way to update the real DOM.",
+            "category": "react"
+          },
+          {
+            "id": 10,
+            "question": "What does `key` do in React lists?",
+            "answers": [
+              "It helps React identify which items have changed, are added, or removed.",
+              "It sets the initial value for list items.",
+              "It is a reserved word in React.",
+              "It prevents re-rendering of list items."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "The `key` prop helps React optimize rendering by uniquely identifying list items.",
+            "category": "react"
+          },
+          {    "id": 11,
+            "question": "What is React's Context API used for?",
+            "answers": [
+              "State management and sharing data across components without prop drilling.",
+              "Creating animations in React.",
+              "Handling HTTP requests.",
+              "Rendering multiple child components."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "The Context API provides a way to share values (like state) across components without passing props manually at every level.",
+            "category": "react"
+          },
+          {   "id": 12,
+            "question": "Which of the following is true about React fragments?",
+            "answers": [
+              "They allow you to group multiple elements without adding extra nodes to the DOM.",
+              "They are used to declare component state.",
+              "They replace React hooks.",
+              "They are used to handle events in React."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "React fragments (`<React.Fragment>` or `<>`) let you group elements without adding extra DOM nodes.",
+            "category": "react"
+          },
+
+        {   "id": 13,
+          "question": "What does the `?` symbol signify in a TypeScript interface?",
+          "answers": [
+            "The property is required.",
+            "The property is optional.",
+            "The property is a string.",
+            "The property has a default value."
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "The `?` symbol in a TypeScript interface indicates that the property is optional and may or may not be present.",
+          "category": "typescript"
+        },
+        {   "id": 14,
+          "question": "What is the primary purpose of TypeScript?",
+          "answers": [
+            "To enhance JavaScript with strong typing.",
+            "To replace JavaScript as a programming language.",
+            "To improve the performance of JavaScript code.",
+            "To allow CSS integration with JavaScript."
+          ],
+          "correctAnswerIndex": 0,
+          "explanation": "TypeScript is a superset of JavaScript that adds static typing, improving code quality and reducing bugs.",
+          "category": "typescript"
+        },
+        {      "id": 15,
+            "question": "How does TypeScript help in catching errors?",
+            "answers": [
+              "By validating code during runtime.",
+              "By adding static typing, allowing errors to be caught during development.",
+              "By replacing JavaScript's execution engine.",
+              "By providing better debugging tools."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "TypeScript's static typing helps identify errors during development before the code is executed.",
+            "category": "typescript"
+          },
+          {   "id": 16,
+            "question": "What is the purpose of the `readonly` modifier in TypeScript?",
+            "answers": [
+              "To prevent a variable from being re-assigned.",
+              "To indicate that a property can only be read, not written to.",
+              "To declare a constant value.",
+              "To enforce immutability in objects."
+            ],
+            "correctAnswerIndex": 1,
+            "explanation": "The `readonly` modifier makes a property read-only, meaning it can be assigned a value only during initialization or construction.",
+            "category": "typescript"
+          },
+          {   "id": 17,
+            "question": "What does `Partial<T>` do in TypeScript?",
+            "answers": [
+              "Makes all properties in the type `T` optional.",
+              "Removes all properties from the type `T`.",
+              "Adds new properties to the type `T`.",
+              "Makes all properties in the type `T` read-only."
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "`Partial<T>` is a utility type that makes all properties in the type `T` optional.",
+            "category": "typescript"
+          },
+          {   "id": 18,
+            "question": "How can you declare a union type in TypeScript?",
+            "answers": [
+              "`type ID = string | number;`",
+              "`type ID = {string, number};`",
+              "`type ID = [string, number];`",
+              "`type ID = string || number;`"
+            ],
+            "correctAnswerIndex": 0,
+            "explanation": "In TypeScript, the `|` symbol is used to declare a union type, meaning a value can be one of several types.",
+            "category": "typescript"
+          },
+            {
+              "id": 19,
+              "question": "What is the output of `console.log([] + {})` in JavaScript?",
+              "answers": [
+                "'[object Object]'",
+                "0",
+                "NaN",
+                "'undefined'"
+              ],
+              "correctAnswerIndex": 0,
+              "explanation": "When an empty array is added to an empty object, it is coerced into a string and results in '[object Object]'.",
+              "category": "javascript"
+            },
+            {
+              "id": 20,
+              "question": "What is the purpose of `use strict` in JavaScript?",
+              "answers": [
+                "To enable the latest ES6+ features.",
+                "To write secure code by avoiding certain mistakes.",
+                "To make JavaScript run faster.",
+                "To enable asynchronous code execution."
+              ],
+              "correctAnswerIndex": 1,
+              "explanation": "`use strict` enforces stricter parsing and error handling, helping to catch common coding mistakes and unsafe actions.",
+              "category": "javascript"
+            },
+            {
+              "id": 21,
+              "question": "Which of the following is NOT a primitive type in JavaScript?",
+              "answers": [
+                "`undefined`",
+                "`boolean`",
+                "`object`",
+                "`symbol`"
+              ],
+              "correctAnswerIndex": 2,
+              "explanation": "`object` is not a primitive type; it represents collections or complex entities.",
+              "category": "javascript"
+            },
+            {
+              "id": 22,
+              "question": "What is the purpose of `React.memo`?",
+              "answers": [
+                "To memoize component logic for optimization.",
+                "To prevent a component from rendering.",
+                "To add lifecycle methods to functional components.",
+                "To optimize rendering of list items."
+              ],
+              "correctAnswerIndex": 0,
+              "explanation": "`React.memo` wraps a component to prevent unnecessary re-renders by memoizing the output based on props.",
+              "category": "react"
+            },
+            {
+              "id": 23,
+              "question": "What is the difference between `useState` and `useReducer` in React?",
+              "answers": [
+                "`useState` is for local state; `useReducer` is for global state.",
+                "`useReducer` allows complex state logic; `useState` is simpler for basic state.",
+                "`useReducer` is asynchronous; `useState` is synchronous.",
+                "`useState` only works in functional components; `useReducer` works everywhere."
+              ],
+              "correctAnswerIndex": 1,
+              "explanation": "`useReducer` is suitable for managing complex state logic and multiple state transitions, while `useState` is simpler and works well for straightforward scenarios.",
+              "category": "react"
+            },
+            {
+              "id": 24,
+              "question": "What does `StrictMode` do in React?",
+              "answers": [
+                "Enables additional checks and warnings for potential problems in an application.",
+                "Forces components to re-render twice in production.",
+                "Automatically optimizes performance of components.",
+                "Provides a fallback UI for errors."
+              ],
+              "correctAnswerIndex": 0,
+              "explanation": "`StrictMode` helps identify issues in an application by enabling additional checks and warnings, particularly in development mode.",
+              "category": "react"
+            },
+            {
+              "id": 25,
+              "question": "What is the purpose of TypeScript's `Record<K, T>` type?",
+              "answers": [
+                "To create an object type with keys of type `K` and values of type `T`.",
+                "To merge two object types into one.",
+                "To enforce immutability for objects.",
+                "To restrict object keys to only strings or numbers."
+              ],
+              "correctAnswerIndex": 0,
+              "explanation": "`Record<K, T>` is a utility type in TypeScript that creates an object type with keys of type `K` and values of type `T`.",
+              "category": "typescript"
+            },
+            {
+              "id": 26,
+              "question": "What is the `unknown` type in TypeScript?",
+              "answers": [
+                "A type that represents values that are always null or undefined.",
+                "A type-safe alternative to `any` that requires narrowing before use.",
+                "A type that allows properties to be added dynamically.",
+                "A type for declaring modules without typings."
+              ],
+              "correctAnswerIndex": 1,
+              "explanation": "The `unknown` type is a safer alternative to `any` in TypeScript. It requires you to narrow the type before performing operations on it.",
+              "category": "typescript"
+            },
+            {
+                "id": 28,
+                "question": "What is the purpose of the `bind()` method in JavaScript?",
+                "answers": [
+                  "To create a new function with a specific `this` context.",
+                  "To permanently bind two variables together.",
+                  "To add event listeners to DOM elements.",
+                  "To merge two functions into one."
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "The `bind()` method creates a new function with a specific `this` value and optionally prepends arguments to the function.",
+                "category": "javascript"
+              },
+              {
+                "id": 29,
+                "question": "What does `Array.prototype.reduce()` do in JavaScript?",
+                "answers": [
+                  "It filters elements of an array.",
+                  "It applies a function against an accumulator to reduce the array to a single value.",
+                  "It sorts an array in ascending or descending order.",
+                  "It creates a shallow copy of an array."
+                ],
+                "correctAnswerIndex": 1,
+                "explanation": "`reduce()` is used to apply a function on each element of the array, resulting in a single output value.",
+                "category": "javascript"
+              },
+              {
+                "id": 30,
+                "question": "What is JSX in React?",
+                "answers": [
+                  "A templating engine used by React.",
+                  "A syntax extension for JavaScript that looks similar to XML or HTML.",
+                  "A library for handling DOM manipulations in React.",
+                  "A tool to compile JavaScript into HTML."
+                ],
+                "correctAnswerIndex": 1,
+                "explanation": "JSX is a syntax extension for JavaScript, used in React to describe what the UI should look like. It gets compiled to React.createElement calls.",
+                "category": "react"
+              },
+              {
+                "id": 31,
+                "question": "What is `useRef` used for in React?",
+                "answers": [
+                  "To reference DOM elements or store mutable values across renders.",
+                  "To trigger a re-render of a component.",
+                  "To pass props between components.",
+                  "To fetch data from an API."
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "`useRef` is a React hook used to persist values across renders without causing a re-render and to access DOM elements directly.",
+                "category": "react"
+              },
+              {
+                "id": 32,
+                "question": "What is the `as` keyword used for in TypeScript?",
+                "answers": [
+                  "To declare variables as constants.",
+                  "To perform type assertions.",
+                  "To create aliases for modules.",
+                  "To define default exports."
+                ],
+                "correctAnswerIndex": 1,
+                "explanation": "The `as` keyword in TypeScript is used for type assertions, which specify the expected type of a value.",
+                "category": "typescript"
+              },
+              {
+                "id": 33,
+                "question": "What does `readonly` in TypeScript prevent?",
+                "answers": [
+                  "Reassigning a variable after initialization.",
+                  "Accessing a variable outside its module.",
+                  "Overwriting an object’s prototype.",
+                  "Calling a function without proper typing."
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "In TypeScript, `readonly` prevents reassigning a value to a variable or property after its initialization.",
+                "category": "typescript"
+              },
+              {
+                "id": 34,
+                "question": "What is the difference between `type` and `interface` in TypeScript?",
+                "answers": [
+                  "`type` is used for primitive types; `interface` is used for objects.",
+                  "`type` can define unions; `interface` cannot.",
+                  "`interface` can be merged; `type` cannot.",
+                  "`interface` is faster to compile than `type`."
+                ],
+                "correctAnswerIndex": 2,
+                "explanation": "Interfaces can be merged (declaration merging), while types cannot. This makes interfaces more flexible in some scenarios.",
+                "category": "typescript"
+              },
+              {
+                "id": 35,
+                "question": "What is the purpose of `super()` in a JavaScript class?",
+                "answers": [
+                  "To call the constructor of the parent class.",
+                  "To define a class method.",
+                  "To create a new prototype chain.",
+                  "To access private properties of a class."
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "`super()` is used to call the constructor of the parent class and is necessary when extending a class.",
+                "category": "javascript"
+              },
+              {
+                "id": 36,
+                "question": "What is a PureComponent in React?",
+                "answers": [
+                  "A component that avoids re-rendering by default.",
+                  "A component that always renders.",
+                  "A component that handles lifecycle methods automatically.",
+                  "A component that uses React.memo by default."
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "A PureComponent implements a shallow comparison of props and state to prevent unnecessary re-renders.",
+                "category": "react"
+              },
+              {
+                "id": 37,
+                "question": "What does the `void` type represent in TypeScript?",
+                "answers": [
+                  "A type for functions that do not return a value.",
+                  "A type for undefined variables.",
+                  "A type for variables that can have any value.",
+                  "A type for null and undefined."
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "The `void` type in TypeScript is used to indicate that a function does not return any value.",
+                "category": "typescript"
+              },
+              {
+                "id": 38,
+                "question": "What is the purpose of the `useCallback` hook in React?",
+                "answers": [
+                  "To memoize a function and avoid unnecessary re-creation.",
+                  "To memoize a component's props.",
+                  "To trigger side effects in a functional component.",
+                  "To manage the component’s local state."
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "`useCallback` is used to memoize functions so they don't get recreated unnecessarily, optimizing performance.",
+                "category": "react"
+              },
+              {
+                "id": 39,
+                "question": "What does the `??` operator do in JavaScript?",
+                "answers": [
+                  "It performs a nullish coalescing check.",
+                  "It checks for equality with null.",
+                  "It compares two values with strict equality.",
+                  "It performs a bitwise operation."
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "The `??` operator (nullish coalescing) returns the right-hand operand when the left-hand operand is `null` or `undefined`.",
+                "category": "javascript"
+              },
+              {
+                "id": 40,
+                "question": "What is the `React.memo` function used for?",
+                "answers": [
+                  "To prevent a component from rendering unless its props change.",
+                  "To cache data for a component.",
+                  "To create higher-order components.",
+                  "To trigger a re-render manually."
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "`React.memo` is a higher-order component that prevents a component from re-rendering unless its props have changed.",
+                "category": "react"
+              },
+              {
+                "id": 41,
+                "question": "What is the purpose of the `interface` keyword in TypeScript?",
+                "answers": [
+                  "To define the structure of an object or class.",
+                  "To create an alias for a type.",
+                  "To specify a constant value.",
+                  "To enforce immutability."
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "The `interface` keyword defines the structure of an object or class, specifying its properties and methods.",
+                "category": "typescript"
+              },
+              {
+                "id": 42,
+                "question": "What does the `finally` block do in JavaScript?",
+                "answers": [
+                  "Executes code after `try` and `catch` blocks, regardless of the outcome.",
+                  "Catches unhandled errors in a promise.",
+                  "Handles asynchronous operations.",
+                  "Executes only if the `try` block fails."
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "The `finally` block runs after `try` and `catch`, regardless of whether an error was thrown or not.",
+                "category": "javascript"
+              },
+              {
+                "id": 43,
+                "question": "What is the difference between `var`, `let`, and `const` in JavaScript?",
+                "answers": [
+                  "`var` is function-scoped, `let` and `const` are block-scoped.",
+                  "`var` is immutable, `let` and `const` are mutable.",
+                  "`const` is function-scoped, `let` and `var` are block-scoped.",
+                  "`let` is hoisted, `var` and `const` are not."
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "`var` is function-scoped and hoisted, while `let` and `const` are block-scoped. `const` is also immutable after initialization.",
+                "category": "javascript"
+              },
+              {
+                "id": 44,
+                "question": "What is the purpose of TypeScript's `enum` keyword?",
+                "answers": [
+                  "To define a set of named constants.",
+                  "To create a new data type.",
+                  "To enforce immutability in objects.",
+                  "To define an interface for a class."
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "`enum` is used to define a set of named constants, making the code more readable and maintainable.",
+                "category": "typescript"
+              },
+              {
+                "id": 45,
+                "question": "What is the purpose of `React.lazy()`?",
+                "answers": [
+                  "To enable code splitting by lazily loading components.",
+                  "To optimize the rendering of components.",
+                  "To create higher-order components.",
+                  "To cache components in memory."
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "`React.lazy()` is used to dynamically import components for code splitting, improving performance.",
+                "category": "react"
+              },
+              {
+                "id": 46,
+                "question": "What is `prop drilling` in React?",
+                "answers": [
+                  "Passing data through multiple layers of components.",
+                  "Manipulating props directly in a child component.",
+                  "Using props to re-render components.",
+                  "Drilling into nested arrays in a component’s state."
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "Prop drilling occurs when props are passed down through multiple layers of components to reach a deeply nested child.",
+                "category": "react"
+              },
+              {
+                "id": 47,
+                "question": "What is the `never` type in TypeScript?",
+                "answers": [
+                  "A type that represents values that never occur.",
+                  "A type for variables that can hold any value.",
+                  "A type for variables that must be null or undefined.",
+                  "A type for uninitialized variables."
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "The `never` type represents values that will never occur, such as the return type of a function that always throws an error.",
+                "category": "typescript"
+              },
+              {
+                "id": 48,
+                "question": "What is the output of the following code?\n\n```javascript\nconsole.log(typeof NaN);\n```",
+                "answers": [
+                  "`number`",
+                  "`NaN`",
+                  "`undefined`",
+                  "`object`"
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "`NaN` stands for 'Not-a-Number', but its type in JavaScript is still `number`.",
+                "category": "javascript"
+              },
+              {
+                "id": 49,
+                "question": "What does the following code return?\n\n```javascript\nconst arr = [1, 2, 3];\nconsole.log([...arr, 4]);\n```",
+                "answers": [
+                  "`[1, 2, 3, 4]`",
+                  "`1, 2, 3, 4`",
+                  "`[1, 2, 3]`",
+                  "`Error`"
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "The spread operator `...arr` expands the array elements, and `[...arr, 4]` creates a new array including the expanded elements and `4`.",
+                "category": "javascript"
+              },
+              {
+                "id": 50,
+                "question": "What is the output of the following React code?\n\n```jsx\nfunction App() {\n  const [count, setCount] = React.useState(0);\n\n  React.useEffect(() => {\n    setCount((prevCount) => prevCount + 1);\n  }, []);\n\n  return <div>{count}</div>;\n}\n```",
+                "answers": [
+                  "`0`",
+                  "`1`",
+                  "`undefined`",
+                  "`Error`"
+                ],
+                "correctAnswerIndex": 1,
+                "explanation": "The `useEffect` hook runs after the initial render and increments the count by 1. The output is `1`.",
+                "category": "react"
+              },
+              {
+                "id": 51,
+                "question": "What is the output of this TypeScript code?\n\n```typescript\ntype MyType = string | number;\n\nfunction display(value: MyType) {\n  return typeof value === 'string' ? value.toUpperCase() : value.toFixed(2);\n}\n\nconsole.log(display(42));\n```",
+                "answers": [
+                  "`'42'`",
+                  "`42.00`",
+                  "`'42.00'`",
+                  "`Error`"
+                ],
+                "correctAnswerIndex": 1,
+                "explanation": "The function checks if the input is a string or a number. Since `42` is a number, it calls `toFixed(2)`, resulting in `42.00`.",
+                "category": "typescript"
+              },
+              {
+                "id": 52,
+                "question": "What is the result of the following JavaScript code?\n\n```javascript\nconst obj = { a: 1, b: 2 };\nconst { a, ...rest } = obj;\nconsole.log(rest);\n```",
+                "answers": [
+                  "`{}`",
+                  "`{ b: 2 }`",
+                  "`undefined`",
+                  "`Error`"
+                ],
+                "correctAnswerIndex": 1,
+                "explanation": "The rest operator `...rest` collects the remaining properties after destructuring, resulting in `{ b: 2 }`.",
+                "category": "javascript"
+              },
+              {
+                "id": 53,
+                "question": "What is the output of this React code?\n\n```jsx\nfunction App() {\n  const [isVisible, setIsVisible] = React.useState(true);\n\n  React.useEffect(() => {\n    setTimeout(() => setIsVisible(false), 1000);\n  }, []);\n\n  return <div>{isVisible ? 'Visible' : 'Hidden'}</div>;\n}\n```",
+                "answers": [
+                  "`Visible` (changes to `Hidden` after 1 second)",
+                  "`Hidden`",
+                  "`Error`",
+                  "`Visible` (stays visible indefinitely)"
+                ],
+                "correctAnswerIndex": 0,
+                "explanation": "The `setTimeout` changes `isVisible` to `false` after 1 second, causing the text to change from `Visible` to `Hidden`.",
+                "category": "react"
+              },
+              {
+                "id": 54,
+                "question": "What does the following TypeScript code output?\n\n```typescript\nconst nums: number[] = [1, 2, 3, 4];\nconst doubled = nums.map((num) => `${num * 2}`);\nconsole.log(doubled);\n```",
+                "answers": [
+                  "`[2, 4, 6, 8]`",
+                  "`['2', '4', '6', '8']`",
+                  "`[2.0, 4.0, 6.0, 8.0]`",
+                  "`Error`"
+                ],
+                "correctAnswerIndex": 1,
+                "explanation": "The `map` method multiplies each number by 2 and converts it to a string, resulting in `['2', '4', '6', '8']`.",
+                "category": "typescript"
+              },
+              {
+                "id": 55,
+                "question": "What is the result of the following code?\n\n```javascript\nconst foo = (a, b = 10) => a + b;\nconsole.log(foo(5));\n```",
+                "answers": [
+                  "`5`",
+                  "`10`",
+                  "`15`",
+                  "`undefined`"
+                ],
+                "correctAnswerIndex": 2,
+                "explanation": "The default parameter `b = 10` is used when `b` is not provided. The sum `5 + 10` is `15`.",
+                "category": "javascript"
+              },
+              {
+                "id": 56,
+                "question": "What is the output of the following TypeScript code?\n\n```typescript\ninterface User {\n  id: number;\n  name: string;\n  isActive?: boolean;\n}\n\nconst user: User = { id: 1, name: 'Alice' };\nconsole.log(user.isActive);\n```",
+                "answers": [
+                  "`true`",
+                  "`false`",
+                  "`undefined`",
+                  "`Error`"
+                ],
+                "correctAnswerIndex": 2,
+                "explanation": "The `isActive` property is optional (`?`), and since it is not defined in the object, its value is `undefined`.",
+                "category": "typescript"
+              }
+            
+          
+]
+    
+  
