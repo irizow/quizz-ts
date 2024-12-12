@@ -1,5 +1,5 @@
 import styles from './playerpanel.module.css'
-import { useState, useEffect, startTransition } from 'react';
+import { useState, useEffect } from 'react';
 import backArrow from '../../assets/images/back-arrow.svg';
 import timerIcon from '../../assets/images/timer.svg'
 import starIcon from '../../assets/images/star.svg'
@@ -48,7 +48,7 @@ export default function PlayerPanel({score}: PlayerPanelProps) {
         <div className={styles.winnermodal}>
             <div>
                 <h3>{stars>15 ? 'AMAZING!' : stars>10 ? 'WELL DONE"' : 'NOT BAD'}</h3>
-                {Array.from({ length: stars }).map((star, index) => (
+                {Array.from({ length: stars }).map((_, index) => (
                 <img key={index} src={starIcon} alt={`Star ${index + 1}`} />
                 ))}
                 <p>You answered {score} questions correctly in {goal} seconds!</p>
