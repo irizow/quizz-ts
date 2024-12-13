@@ -5,3 +5,12 @@
     place-items: center;
 }
 
+
+@media screen and (max-width: 750px) {
+    .questions {
+        min-height: 100dvh;
+        height: 100dvh;
+    }
+    
+}
+

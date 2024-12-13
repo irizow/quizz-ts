@@ -39,6 +39,9 @@
 }
 
 @media screen and (max-width: 750px) {
+    .home {
+        height: 100dvh;
+    }
     .home>div:last-child {
         padding: 1rem;
     }
