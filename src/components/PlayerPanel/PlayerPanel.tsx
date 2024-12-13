@@ -48,9 +48,11 @@ export default function PlayerPanel({score}: PlayerPanelProps) {
         <div className={styles.winnermodal}>
             <div>
                 <h3>{stars>15 ? 'AMAZING!' : stars>10 ? 'WELL DONE"' : 'NOT BAD'}</h3>
-                {Array.from({ length: stars }).map((_, index) => (
-                <img key={index} src={starIcon} alt={`Star ${index + 1}`} />
-                ))}
+                <div className={styles.starcontainer}>
+                    {Array.from({ length: stars }).map((_, index) => (
+                    <img key={index} src={starIcon} alt={`Star ${index + 1}`} />
+                    ))}
+                </div>
                 <p>You answered {score} questions correctly in {goal} seconds!</p>
                 <a href='/'>Try Again</a>
             </div>

@@ -4,7 +4,9 @@
     display: flex;
     justify-content: space-between;
     place-items: center;
-    place-self:start;
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 0 1rem;
     color: var(--white);
 }
@@ -65,6 +67,11 @@
     
 }
 
-.winnermodal img {
+.starcontainer img {
     width: 2rem;
+}
+
+.starcontainer {
+    display: flex;
+    gap: 0.5rem;
 }
